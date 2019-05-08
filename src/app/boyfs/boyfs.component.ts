@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Boyf } from '../boyf';
+import { BOYFS } from '../mock-boyfs';
 
 @Component({
   selector: 'app-boyfs',
@@ -8,11 +8,7 @@ import { Boyf } from '../boyf';
 })
 export class BoyfsComponent implements OnInit {
 
-  boyf: Boyf = {
-    id: 0,
-    name: "Wolf O'Donnell",
-    anniversary: new Date()
-  };
+  boyfs = BOYFS;
 
   constructor() { }
 
