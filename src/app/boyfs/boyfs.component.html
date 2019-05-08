@@ -1,0 +1,8 @@
+<table border=1>
+  <h3>{{boyf.name}} Details</h3>
+  <div><span>id: </span>{{boyf.id}}</div>
+  <label>name:
+    <input [(ngModel)]="boyf.name" placeholder="name" />
+  </label>
+  <div><span>anniversary: </span> {{boyf.anniversary | date }}</div>
+</table>
