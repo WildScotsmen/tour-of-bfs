@@ -20,10 +20,10 @@ export class BoyfDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getHero();
+    this.getBoyf();
   }
 
-  getHero(): void {
+  getBoyf(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.boyfService.getBoyf(id).subscribe(
       boyf => this.boyf = boyf
