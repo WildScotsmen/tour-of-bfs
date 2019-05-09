@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { MessageService } from './message.service';
 import { Boyf } from './boyf';
 import { BOYFS } from './mock-boyfs';
 
@@ -8,9 +9,10 @@ import { BOYFS } from './mock-boyfs';
 })
 export class BoyfService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   getBoyfs(): Observable<Boyf[]> {
+      this.messageService.add('BoyfService: fetched boyfriends.');
       return of(BOYFS);
   }
 

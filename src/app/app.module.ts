@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoyfsComponent } from './boyfs/boyfs.component';
 import { BoyfDetailComponent } from './boyf-detail/boyf-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoyfsComponent,
-    BoyfDetailComponent
+    BoyfDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
