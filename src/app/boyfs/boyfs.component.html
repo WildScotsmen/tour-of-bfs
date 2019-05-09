@@ -1,11 +1,18 @@
+<div *ngIf="selectedBoyf">
+  <h2>{{selectedBoyf.name}}'s Details </h2>
+  <div><span>ID: </span>#{{selectedBoyf.id}}</div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="selectedBoyf.name" placeholder="name" />
+    </label>
+  </div>
+  <div><span>Anniversary: </span> {{ selectedBoyf.anniversary | date }}</div>
+
+</div>
+
 <h2>My Boyfriends</h2>
 <ul class="boyfs">
-  <li *ngFor="let boyf of boyfs">
-    <h3>{{boyf.name}} Details</h3>
-    <div><span>ID: </span>{{boyf.id}}</div>
-    <label>Name:
-      <input [(ngModel)]="boyf.name" placeholder="name" />
-    </label>
-    <div><span>Anniversary: </span> {{boyf.anniversary | date }}</div>
+  <li *ngFor="let boyf of boyfs" (click)="onSelect(boyf)" [class.selected]="boyf === selectedBoyf">
+    <span class="badge">ID #{{boyf.id}} - {{boyf.name}}</span>
   </li>
 </ul>

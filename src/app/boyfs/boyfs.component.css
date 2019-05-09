@@ -1,7 +1,18 @@
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+span.badge {
+  cursor: pointer;
+  font-size: 120%
+}
+
+.selected {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: crimson;
 }
