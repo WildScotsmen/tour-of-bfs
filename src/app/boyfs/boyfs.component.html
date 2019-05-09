@@ -2,10 +2,10 @@
 <ul class="boyfs">
   <li *ngFor="let boyf of boyfs">
     <h3>{{boyf.name}} Details</h3>
-    <div><span>id: </span>{{boyf.id}}</div>
-    <label>name:
+    <div><span>ID: </span>{{boyf.id}}</div>
+    <label>Name:
       <input [(ngModel)]="boyf.name" placeholder="name" />
     </label>
-    <div><span>anniversary: </span> {{boyf.anniversary | date }}</div>
+    <div><span>Anniversary: </span> {{boyf.anniversary | date }}</div>
   </li>
 </ul>
