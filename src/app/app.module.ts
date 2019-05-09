@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoyfsComponent } from './boyfs/boyfs.component';
+import { BoyfDetailComponent } from './boyf-detail/boyf-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoyfsComponent
+    BoyfsComponent,
+    BoyfDetailComponent
   ],
   imports: [
     BrowserModule,

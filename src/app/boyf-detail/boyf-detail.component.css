@@ -1,0 +1,16 @@
+h2 {
+  font-size: 175%;
+}
+
+input {
+  font-family: 'Tahoma';
+  font-size: 100%;
+}
+
+span {
+  font-weight: bold;
+}
+  
+label {
+  font-weight: bold;
+}

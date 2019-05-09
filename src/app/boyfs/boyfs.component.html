@@ -1,14 +1,4 @@
-<div *ngIf="selectedBoyf">
-  <h2>{{selectedBoyf.name}}'s Details </h2>
-  <div><span>ID: </span>#{{selectedBoyf.id}}</div>
-  <div>
-    <label>Name:
-      <input [(ngModel)]="selectedBoyf.name" placeholder="name" />
-    </label>
-  </div>
-  <div><span>Anniversary: </span> {{ selectedBoyf.anniversary | date }}</div>
-
-</div>
+<app-boyf-detail [boyf]="selectedBoyf"></app-boyf-detail>
 
 <h2>My Boyfriends</h2>
 <ul class="boyfs">

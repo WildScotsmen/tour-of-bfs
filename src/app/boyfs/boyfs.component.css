@@ -1,14 +1,10 @@
-span {
-  font-weight: bold;
-}
-
-label {
-  font-weight: bold;
+h2 {
+    font-size: 175%;
 }
 
 span.badge {
   cursor: pointer;
-  font-size: 120%
+  font-size: 130%
 }
 
 .selected {
