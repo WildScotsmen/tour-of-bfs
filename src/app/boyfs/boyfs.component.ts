@@ -23,4 +23,24 @@ export class BoyfsComponent implements OnInit {
     );
   }
 
+  add(name: string): void {
+    const today = new Date();
+
+    name = name.trim();
+
+    if (!name) {
+      return;
+    }
+
+    this.boyfService.addBoyf(
+      { name: name, anniversary: today } as Boyf).subscribe(
+        boyf => { this.boyfs.push(boyf) }
+      );
+  }
+
+  delete(boyf: Boyf): void {
+    this.boyfs = this.boyfs.filter(b => b !== boyf);
+    this.boyfService.deleteBoyf(boyf).subscribe();
+  }
+
 }

@@ -34,4 +34,10 @@ export class BoyfDetailComponent implements OnInit {
     this.location.back();
   }
 
+  save(): void {
+    this.boyfService.updateBoyf(this.boyf).subscribe(
+      () => this.goBack()
+    );
+  }
+
 }

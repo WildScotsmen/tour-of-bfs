@@ -1,8 +1,21 @@
 <h2>My Boyfriends</h2>
+
+<div>
+  <label>Boyfriend name:
+    <input #boyfName />
+  </label>
+  <button (click)="add(boyfName.value); boyfName.value=''">
+    Add
+  </button>
+</div>
+
 <ul class="boyfs">
   <li *ngFor="let boyf of boyfs">
     <a routerLink="/detail/{{boyf.id}}">
       <span class="badge">ID #{{boyf.id}} - {{boyf.name}}</span>
     </a>
+    <button class="delete" title="delete" (click)="delete(boyf)">
+      x
+    </button>
   </li>
 </ul>
