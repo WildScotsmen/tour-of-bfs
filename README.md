@@ -7,6 +7,7 @@ My foray into Angular. Based off the [Angular Tutorial](https://angular.io/tutor
 ## Production Environment
 
 [Application URL](https://tour-of-boyfs.netlify.com/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/782b7562-3f0e-4f70-8c54-82c4616f89bf/deploy-status)](https://app.netlify.com/sites/tour-of-boyfs/deploys)
 
 ## Further help
