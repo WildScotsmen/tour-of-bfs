@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { BoyfService } from '../boyf.service'
 import { Boyf } from '../boyf';
 
 @Component({
@@ -10,9 +13,25 @@ export class BoyfDetailComponent implements OnInit {
 
   @Input() boyf: Boyf;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private boyfService: BoyfService,
+    private location: Location
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.getHero();
+  }
+
+  getHero(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.boyfService.getBoyf(id).subscribe(
+      boyf => this.boyf = boyf
+    );
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }

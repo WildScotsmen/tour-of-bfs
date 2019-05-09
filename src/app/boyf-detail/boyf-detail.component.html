@@ -1,5 +1,5 @@
 <div *ngIf="boyf">
-  
+
   <h2>{{boyf.name}}'s Details </h2>
   <div><span>ID: </span>#{{boyf.id}}</div>
   <div>
@@ -10,3 +10,5 @@
   <div><span>Anniversary: </span> {{ boyf.anniversary | date }}</div>
 
 </div>
+
+<button (click)="goBack()">Go Back</button>

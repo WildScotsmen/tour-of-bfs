@@ -1,0 +1,14 @@
+<h2>Top Boyfriends</h2>
+<div class="grid grid-pad">
+  <ol>
+    <h4>
+      <li *ngFor="let boyf of boyfs">
+        <a class="col-1-4" routerLink="/detail/{{boyf.id}}">
+          <div class="module boyf">
+            {{boyf.name}}
+          </div>
+        </a>
+      </li>
+    </h4>
+  </ol>
+</div>

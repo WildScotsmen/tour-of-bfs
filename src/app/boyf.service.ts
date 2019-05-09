@@ -12,8 +12,13 @@ export class BoyfService {
   constructor(private messageService: MessageService) { }
 
   getBoyfs(): Observable<Boyf[]> {
-      this.messageService.add('BoyfService: fetched boyfriends.');
-      return of(BOYFS);
+    this.messageService.add('BoyfService: fetched boyfriends.');
+    return of(BOYFS);
+  }
+
+  getBoyf(id: number): Observable<Boyf> {
+    this.messageService.add(`BoyfService: fetched boyfriend with ID #${id}.`);
+    return of(BOYFS.find(boyf => boyf.id === id));
   }
 
 }

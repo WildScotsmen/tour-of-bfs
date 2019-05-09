@@ -1,8 +1,8 @@
-<app-boyf-detail [boyf]="selectedBoyf"></app-boyf-detail>
-
 <h2>My Boyfriends</h2>
 <ul class="boyfs">
-  <li *ngFor="let boyf of boyfs" (click)="onSelect(boyf)" [class.selected]="boyf === selectedBoyf">
-    <span class="badge">ID #{{boyf.id}} - {{boyf.name}}</span>
+  <li *ngFor="let boyf of boyfs">
+    <a routerLink="/detail/{{boyf.id}}">
+      <span class="badge">ID #{{boyf.id}} - {{boyf.name}}</span>
+    </a>
   </li>
 </ul>

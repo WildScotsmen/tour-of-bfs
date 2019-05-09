@@ -11,8 +11,6 @@ export class BoyfsComponent implements OnInit {
 
   boyfs: Boyf[];
 
-  selectedBoyf: Boyf;
-
   constructor(private boyfService: BoyfService) { }
 
   ngOnInit() {
@@ -23,10 +21,6 @@ export class BoyfsComponent implements OnInit {
     this.boyfService.getBoyfs().subscribe(
       boyfs => this.boyfs = boyfs
     );
-  }
-
-  onSelect(boyf: Boyf): void {
-    this.selectedBoyf = boyf;
   }
 
 }

@@ -1,12 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Torahiko Ooshima" src="../assets/Torahiko_1_0_04.png">
+
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/boyfriends">Boyfriends</a>
+  </nav>
+
+  <br />
+
 </div>
 
-<app-boyfs></app-boyfs>
-<app-messages></app-messages>
-
 <router-outlet></router-outlet>
+<app-messages></app-messages>
