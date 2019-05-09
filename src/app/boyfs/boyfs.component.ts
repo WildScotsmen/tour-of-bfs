@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BOYFS } from '../mock-boyfs';
+import { BoyfService } from '../boyf.service';
 import { Boyf } from '../boyf';
 
 @Component({
@@ -9,13 +9,21 @@ import { Boyf } from '../boyf';
 })
 export class BoyfsComponent implements OnInit {
 
-  boyfs = BOYFS;
+  boyfs: Boyf[];
 
   selectedBoyf: Boyf;
 
-  constructor() { }
+  constructor(private boyfService: BoyfService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.getBoyfs();
+  }
+
+  getBoyfs(): void {
+    this.boyfService.getBoyfs().subscribe(
+      boyfs => this.boyfs = boyfs
+    );
+  }
 
   onSelect(boyf: Boyf): void {
     this.selectedBoyf = boyf;
