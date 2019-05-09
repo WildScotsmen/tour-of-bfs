@@ -2,13 +2,18 @@ h2 {
     font-size: 175%;
 }
 
+
+span {
+    font-weight: bold;
+}
+
 span.badge {
   cursor: pointer;
   font-size: 130%
 }
 
 .selected {
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: crimson;
 }
