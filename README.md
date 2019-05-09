@@ -4,25 +4,11 @@ My foray into Angular. Based off the [Angular Tutorial](https://angular.io/tutor
 
 ![Torahiko Ooshima loves you!](https://raw.githubusercontent.com/WildScotsmen/tour-of-boyfs/develop/src/assets/Torahiko_1_0_04.png)
 
-## Development server
+## Production Environment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Application URL](https://tour-of-boyfs.netlify.com/)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/782b7562-3f0e-4f70-8c54-82c4616f89bf/deploy-status)](https://app.netlify.com/sites/tour-of-boyfs/deploys)
 
 ## Further help
 
