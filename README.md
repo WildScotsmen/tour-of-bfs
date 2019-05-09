@@ -1,6 +1,6 @@
 # Tour of Boyfriends
 
-My foray into Angular. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+My foray into Angular. Based off the [Angular Tutorial](https://angular.io/tutorial/) pages.
 
 ![Torahiko Ooshima loves you!](https://raw.githubusercontent.com/WildScotsmen/tour-of-boyfs/develop/src/assets/Torahiko_1_0_04.png)
 
