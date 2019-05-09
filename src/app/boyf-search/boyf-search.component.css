@@ -1,0 +1,16 @@
+div#search-component {
+    text-align: center;
+}
+
+ul.search-result {
+    font-size: 80%;
+    list-style: none;
+    list-style-position: inside;
+    display: inline;
+}
+
+input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

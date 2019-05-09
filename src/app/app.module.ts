@@ -11,6 +11,7 @@ import { BoyfsComponent } from './boyfs/boyfs.component';
 import { BoyfDetailComponent } from './boyf-detail/boyf-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BoyfSearchComponent } from './boyf-search/boyf-search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BoyfsComponent,
     BoyfDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    BoyfSearchComponent
   ],
 
   imports: [

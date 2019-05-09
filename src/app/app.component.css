@@ -1,3 +1,7 @@
+div#main-app {
+    text-align: center;
+}
+
 a {
-    margin-left: 3%
+    padding: 3%;
 }

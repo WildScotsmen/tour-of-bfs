@@ -23,6 +23,17 @@ export class BoyfService {
     private messageService: MessageService
   ) { }
 
+  searchBoyfs(term: string): Observable<Boyf[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+
+    return this.http.get<Boyf[]>(`${this.boyfsUrl}/?name=${term}`).pipe(
+      tap(_ => this.log(`searched boyfriends matching "${term}"`)),
+      catchError(this.handleError<Boyf[]>('searchBoyfs', []))
+    );
+  }
+
   getBoyfs(): Observable<Boyf[]> {
     this.log('fetched boyfriends');
     return this.http.get<Boyf[]>(this.boyfsUrl).pipe(
